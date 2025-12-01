@@ -19,6 +19,12 @@ const Auth = () => {
     navigate('/');
   };
 
+  const fillDemoCredentials = () => {
+    setEmail('test@lumina.com');
+    setPassword('password123');
+    if (!isLogin) setIsLogin(true);
+  };
+
   return (
     <div className="min-h-[80vh] flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 bg-white p-10 shadow-xl rounded-sm">
@@ -36,6 +42,24 @@ const Auth = () => {
             </button>
           </p>
         </div>
+
+        <div className="bg-gray-50 p-4 rounded-md border border-gray-200 text-sm">
+            <p className="font-semibold text-gray-700 mb-2">Testing Credentials:</p>
+            <div className="flex justify-between items-center text-gray-600">
+                <div>
+                    <p>Email: <span className="font-mono">test@lumina.com</span></p>
+                    <p>Password: <span className="font-mono">password123</span></p>
+                </div>
+                <button 
+                    type="button"
+                    onClick={fillDemoCredentials}
+                    className="text-xs bg-gray-200 hover:bg-gray-300 text-gray-800 px-2 py-1 rounded transition-colors"
+                >
+                    Auto-fill
+                </button>
+            </div>
+        </div>
+
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm -space-y-px">
             {!isLogin && (

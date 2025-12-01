@@ -16,7 +16,7 @@ export const PRODUCTS: Product[] = [
     price: 4999.00,
     description: 'Rugged yet sophisticated. Our Midnight Denim Jacket is crafted from heavyweight Japanese denim with a dark indigo wash that fades beautifully over time. Features vintage-inspired copper hardware.',
     category: 'Outerwear',
-    image: 'https://images.unsplash.com/photo-1601333762716-448c51f6816e?auto=format&fit=crop&q=80&w=800',
+    image: 'https://image.hm.com/assets/hm/a8/74/a874dd60d04b4b7c924cdd6bdeea67a6267a1461.jpg?imwidth=2160',
     sizes: ['M', 'L', 'XL']
   },
   {
